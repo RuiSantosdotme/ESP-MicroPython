@@ -1,5 +1,3 @@
-# Complete project details at https://RandomNerdTutorials.com
-
 from machine import Pin
 import time
 
