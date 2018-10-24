@@ -1,0 +1,56 @@
+<html><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      max-width: 300px;
+      margin: 0px auto;
+    }
+    .switch {
+      position:relative;
+      display:inline-block;
+      width:120px;
+      height:68px
+    }
+    .switch input { display:none }
+    .slider {
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      background-color:#ccc;
+      border-radius:34px
+    }
+    .slider:before {
+      position:absolute;
+      content:"";
+      height:52px;
+      width:52px;
+      left:8px;
+      bottom:8px;
+      background-color:#fff;
+      -webkit-transition:.4s;
+      transition:.4s;
+      border-radius:68px}
+    input:checked+.slider{ background-color:#2196F3 }
+    input:checked+.slider:before {
+      -webkit-transform:translateX(52px);
+      -ms-transform:translateX(52px);
+      transform:translateX(52px)
+    }
+  </style>
+  <script>
+    function toggleCheckbox(element) {
+      var xhr = new XMLHttpRequest();
+      if (element.checked) { xhr.open("GET", "/?led=on", true); }
+      else { xhr.open("GET", "/?led=off", true); }
+      xhr.send();
+    }
+  </script>
+</head><body>
+  <h1>ESP Web Server</h1>
+  <label class="switch">
+    <input type="checkbox" onchange="toggleCheckbox(this)" %s>
+    <span class="slider"></span>
+  </label>
+</body></html>
