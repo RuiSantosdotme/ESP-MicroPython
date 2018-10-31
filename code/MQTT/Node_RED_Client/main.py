@@ -21,7 +21,7 @@ def sub_cb(topic, msg):
   print((topic, msg))
   if msg == b'on':
     led.value(1)
-elif msg == b'off':
+  elif msg == b'off':
     led.value(0)
 
 def connect_and_subscribe():
