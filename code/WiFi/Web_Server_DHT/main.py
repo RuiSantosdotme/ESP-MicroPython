@@ -26,7 +26,7 @@ def web_page():
   html = """<html><head><meta name="viewport" content="width=device-width, initial-scale=1">
   <style>body{padding: 20px; margin: auto; width: 50%; text-align: center;}
   .progress{background-color: #F5F5F5;} .progress.vertical{position: relative;
-  width: 30%; height: 60%; display: inline-block; margin: 20px;}
+  width: 25%; height: 60%; display: inline-block; margin: 20px;}
   .progress.vertical > .progress-bar{width: 100% !important;position: absolute;bottom: 0;}
   .progress-bar{background: linear-gradient(to top, #f5af19 0%, #f12711 100%);}
   .progress-bar-hum{background: linear-gradient(to top, #9CECFB 0%, #65C7F7 50%, #0052D4 100%);}
