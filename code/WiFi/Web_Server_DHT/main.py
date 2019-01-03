@@ -7,7 +7,7 @@ def read_sensor():
     sensor.measure()
     temp = sensor.temperature()
     hum = sensor.humidity()
-    if isinstance(temp, float) and isinstance(hum, float):
+    if (isinstance(temp, float) and isinstance(hum, float)) or (isinstance(temp, int) and isinstance(hum, int)):
       msg = (b'{0:3.1f},{1:3.1f}'.format(temp, hum))
 
       temp_percentage = (temp+6)/(40+6)*(100)
