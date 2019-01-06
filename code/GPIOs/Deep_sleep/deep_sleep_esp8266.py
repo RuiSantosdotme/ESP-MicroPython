@@ -4,9 +4,6 @@ import machine
 from machine import Pin
 from time import sleep
 
-import gc
-gc.collect()
-
 led = Pin (2, Pin.OUT)
 
 def deep_sleep(msecs) :
