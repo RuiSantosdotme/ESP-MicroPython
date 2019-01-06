@@ -1,8 +1,5 @@
 # Complete project details at https://RandomNerdTutorials.com
 
-import gc
-gc.collect()
-
 import machine
 from machine import Pin
 from time import sleep
