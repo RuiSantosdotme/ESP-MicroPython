@@ -1,7 +1,7 @@
 # Complete project details at https://RandomNerdTutorials.com
 
 def web_page():
-  html = """<!DOCTYPE HTML><html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+  html = """<html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
   <body><h1>Hello, World!</h1></body></html>"""
   return html
 
