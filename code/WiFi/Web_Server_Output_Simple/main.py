@@ -1,7 +1,7 @@
 # Complete project details at https://RandomNerdTutorials.com
 
 def web_page():
-  html = """<html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+  html = """<!DOCTYPE HTML><html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
   <body><h1>ESP Web Server</h1><a href=\"?led=on\"><button>ON</button></a>&nbsp;
   <a href=\"?led=off\"><button>OFF</button></a></body></html>"""
   return html
@@ -25,10 +25,8 @@ while True:
     print('LED OFF')
     led.value(0)
   response = web_page()
-  conn.send('HTTP/1.1 200 OK')
-  conn.send('Content-Type: text/html; encoding=utf8\nContent-Length: ')
-  conn.send(str(len(response)))
-  conn.send('\nConnection: close\n')
-  conn.send('\n')
-  conn.send(response)
+  conn.send('HTTP/1.1 200 OK\n')
+  conn.send('Content-Type: text/html\n')
+  conn.send('Connection: close\n\n')
+  conn.sendall(response)
   conn.close()
