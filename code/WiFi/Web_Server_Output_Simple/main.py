@@ -1,7 +1,7 @@
 # Complete project details at https://RandomNerdTutorials.com
 
 def web_page():
-  html = """<!DOCTYPE HTML><html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+  html = """<html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
   <body><h1>ESP Web Server</h1><a href=\"?led=on\"><button>ON</button></a>&nbsp;
   <a href=\"?led=off\"><button>OFF</button></a></body></html>"""
   return html
