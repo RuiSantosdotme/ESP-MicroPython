@@ -5,7 +5,7 @@ def web_page():
     led_state = 'checked'
   else:
     led_state = ""
-  html = """<html><head><meta name="viewport" content="width=device-width, initial-scale=1"><style>
+  html = """<!DOCTYPE HTML><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><style>
   body{max-width: 300px; margin: 0px auto;}
   .switch{position:relative;display:inline-block;width:120px;height:68px}.switch input{display:none}
   .slider{position:absolute;top:0;left:0;right:0;bottom:0;background-color:#ccc;border-radius:34px}
@@ -37,5 +37,8 @@ while True:
     print('LED OFF')
     led.value(0)
   response = web_page()
-  conn.send(response)
+  conn.send('HTTP/1.1 200 OK\n')
+  conn.send('Content-Type: text/html\n')
+  conn.send('Connection: close\n\n')
+  conn.sendall(response)
   conn.close()
