@@ -23,7 +23,7 @@ def read_sensor():
     return('Failed to read sensor.')
 
 def web_page():
-  html = """<html><head><meta name="viewport" content="width=device-width, initial-scale=1">
+  html = """<!DOCTYPE HTML><html><head><meta name="viewport" content="width=device-width, initial-scale=1">
   <style>body{padding: 20px; margin: auto; width: 50%; text-align: center;}
   .progress{background-color: #F5F5F5;} .progress.vertical{position: relative;
   width: 25%; height: 60%; display: inline-block; margin: 20px;}
@@ -50,5 +50,8 @@ while True:
   sensor_readings = read_sensor()
   print(sensor_readings)
   response = web_page()
-  conn.send(response)
+  conn.send('HTTP/1.1 200 OK\n')
+  conn.send('Content-Type: text/html\n')
+  conn.send('Connection: close\n\n')
+  conn.sendall(response)
   conn.close()
