@@ -23,7 +23,7 @@ def read_sensor():
     return('Failed to read sensor.')
 
 def web_page():
-  html = """<!DOCTYPE HTML><html><head><meta name="viewport" content="width=device-width, initial-scale=1">
+  html = """<html><head><meta name="viewport" content="width=device-width, initial-scale=1">
   <style>body{padding: 20px; margin: auto; width: 50%; text-align: center;}
   .progress{background-color: #F5F5F5;} .progress.vertical{position: relative;
   width: 25%; height: 60%; display: inline-block; margin: 20px;}
