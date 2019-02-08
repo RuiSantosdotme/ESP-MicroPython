@@ -6,7 +6,7 @@ from time import time
 start_timer = False
 motion = False
 last_motion_time = 0
-delay_interval = 10
+delay_interval = 20
 
 def handle_interrupt(pin):
   global motion, last_motion_time, start_timer
