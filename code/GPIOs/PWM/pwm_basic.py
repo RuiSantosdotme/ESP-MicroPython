@@ -7,7 +7,6 @@ frequency = 5000
 led = PWM(Pin(5), frequency)
 
 while True:
-  for duty_cycle in range(0, 1040, 16):
-    print(duty_cycle)
+  for duty_cycle in range(0, 1024):
     led.duty(duty_cycle)
-    sleep(0.1)
+    sleep(0.005)
