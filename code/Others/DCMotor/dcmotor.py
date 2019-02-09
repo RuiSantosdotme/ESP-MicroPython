@@ -35,5 +35,4 @@ class DCMotor:
       duty_cycle = 0
     else:
       duty_cycle = int (self.min_duty + (self.max_duty - self.min_duty)*((self.speed - 1)/(100-1)))
-      print(duty_cycle)
     return duty_cycle
