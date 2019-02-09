@@ -71,9 +71,7 @@ def bounce(r, g, b, wait):
     time.sleep_ms(wait)
       
 bounce(255, 0, 125, 50)
-print('bouncing')
 time.sleep(1)
-print('stop')
 
 # cycle
 def cycle(r, g, b, wait):
