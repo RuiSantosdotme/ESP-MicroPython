@@ -8,7 +8,7 @@ from time import sleep
 i2c = I2C(-1, scl=Pin(22), sda=Pin(21))
 
 # ESP8266 Pin assignment
-#i2c = I2C(-1, scl=Pin(5),sda=Pin(4))
+#i2c = I2C(-1, scl=Pin(5), sda=Pin(4))
 
 oled_width = 128
 oled_height = 64
