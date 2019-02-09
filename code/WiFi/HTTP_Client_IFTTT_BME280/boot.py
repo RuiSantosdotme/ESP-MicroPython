@@ -28,9 +28,9 @@ print('Connection successful')
 print(station.ifconfig())
 
 # ESP32 - Pin assignement
-i2c = I2C(scl=Pin(22),sda=Pin(21), freq=10000)
+i2c = I2C(scl=Pin(22), sda=Pin(21), freq=10000)
 # ESP8266 - Pin assignement
-#i2c = I2C(scl=Pin(5),sda=Pin(4), freq=10000)
+#i2c = I2C(scl=Pin(5), sda=Pin(4), freq=10000)
 
 try:
   bme = BME280.BME280(i2c=i2c)
