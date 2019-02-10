@@ -11,6 +11,8 @@ pin2 = Pin(14, Pin.OUT)
 enable = PWM(Pin(13), frequency)
 
 dc_motor = DCMotor(pin1, pin2, enable)
+#Set min duty cycle (350) and max duty cycle (1023)
+#dc_motor = DCMotor(pin1, pin2, enable, 350, 1023)
 
 dc_motor.forward(50)
 sleep(2)
