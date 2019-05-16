@@ -4,7 +4,7 @@ import machine
 from machine import Pin
 from time import sleep
 
-led = Pin (2, Pin.OUT)
+led = Pin(2, Pin.OUT)
 
 def deep_sleep(msecs):
   # configure RTC.ALARM0 to be able to wake the device
