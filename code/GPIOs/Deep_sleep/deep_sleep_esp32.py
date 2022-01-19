@@ -1,6 +1,6 @@
 # Complete project details at https://RandomNerdTutorials.com
 
-import machine
+from machine import deepsleep
 from machine import Pin
 from time import sleep
 
@@ -19,4 +19,4 @@ sleep(5)
 print('Im awake, but Im going to sleep')
 
 #sleep for 10 seconds (10000 milliseconds)
-machine.deepsleep(10000)
+deepsleep(10000)
