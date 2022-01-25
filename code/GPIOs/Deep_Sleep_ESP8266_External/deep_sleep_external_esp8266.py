@@ -1,11 +1,11 @@
 # Complete project details at https://RandomNerdTutorials.com
 
-import machine
+from machine import deepsleep
 from machine import Pin
 from time import sleep
 
 led = Pin (2, Pin.OUT)
-  
+
 #blink LED
 led.value(0)
 sleep(1)
@@ -19,4 +19,4 @@ print('Im awake, but Im going to sleep')
 sleep(1)
 
 #sleep for indefinite time
-machine.deepsleep()
+deepsleep()
