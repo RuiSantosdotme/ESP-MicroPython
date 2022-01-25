@@ -1,7 +1,7 @@
 # Complete project details at https://RandomNerdTutorials.com
 
-import machine
 import esp32
+from machine import deepsleep
 from machine import Pin
 from time import sleep
 
@@ -16,4 +16,4 @@ esp32.wake_on_ext1(pins = (wake1, wake2), level = esp32.WAKEUP_ANY_HIGH)
 print('Im awake. Going to sleep in 10 seconds')
 sleep(10)
 print('Going to sleep now')
-machine.deepsleep()
+deepsleep()
