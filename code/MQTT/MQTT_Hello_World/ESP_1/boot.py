@@ -14,6 +14,9 @@ gc.collect()
 ssid = 'REPLACE_WITH_YOUR_SSID'
 password = 'REPLACE_WITH_YOUR_PASSWORD'
 mqtt_server = 'REPLACE_WITH_YOUR_MQTT_BROKER_IP'
+mqtt_user = 'REPLACE_WITH_YOUR_MQTT_USERNAME'
+mqtt_pass = 'REPLACE_WITH_YOUR_MQTT_PASSWORD'
+
 #EXAMPLE IP ADDRESS
 #mqtt_server = '192.168.1.144'
 client_id = ubinascii.hexlify(machine.unique_id())
