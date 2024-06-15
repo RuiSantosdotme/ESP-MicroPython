@@ -1,4 +1,4 @@
-# Complete project details: https://RandomNerdTutorials.com/
+# Complete project details: https://RandomNerdTutorials.com/micropython-programming-with-esp32-and-esp8266/
 import umail # Micropython lib to send emails: https://github.com/shawwwn/uMail
 import network
 import BME280
