@@ -1,4 +1,4 @@
-# Complete project details at https://RandomNerdTutorials.com
+# Complete project details at https://RandomNerdTutorials.com/micropython-programming-with-esp32-and-esp8266/
 
 from machine import Pin, PWM, ADC
 from time import sleep
