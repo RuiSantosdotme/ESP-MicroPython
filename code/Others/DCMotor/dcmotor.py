@@ -1,6 +1,6 @@
-# Created by https://RandomNerdTutorials.com
-
-#This file includes a class to control DC motors
+# Rui Santos & Sara Santos - Random Nerd Tutorials 
+# Complete project details at https://RandomNerdTutorials.com/micropython-programming-with-esp32-and-esp8266/
+# This file includes a class to control DC motors
 
 class DCMotor:
   #the min_duty and max_duty are defined for 15000Hz frequency
