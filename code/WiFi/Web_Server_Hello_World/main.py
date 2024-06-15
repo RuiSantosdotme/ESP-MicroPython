@@ -1,4 +1,4 @@
-# Complete project details at https://RandomNerdTutorials.com
+# Complete project details at https://RandomNerdTutorials.com/micropython-programming-with-esp32-and-esp8266/
 
 def web_page():
   html = """<html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
